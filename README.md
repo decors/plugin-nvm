@@ -13,7 +13,7 @@
 ## Install
 
 ```fish
-$ omf install nvm
+$ fisher install decors/plugin-nvm
 ```
 
 

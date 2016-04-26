@@ -1,11 +1,11 @@
 function nvm -d "Node version manager"
   if test -e $nvm_prefix/nvm.sh
-    if not type -q fenv
-      echo "You need to install foreign-env plugin"
+    if not type -q bass
+      echo "You need to install edc/bass plugin"
       return 1
     end
 
-    fenv source $nvm_prefix/nvm.sh\; nvm $argv
+    bass source $nvm_prefix/nvm.sh\; nvm $argv
   else
     echo "You need to install nvm"
     return 1
